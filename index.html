@@ -19,7 +19,6 @@
   --paper: #fafaf7;
   --ink: #30362c;
   --muted: #777b70;
-  --line: #e0e3d9;
   --melon: #ddd273;
   font-family: Arial, Helvetica, sans-serif;
   color: var(--ink);
@@ -38,7 +37,6 @@ a:focus-visible { outline: 2px solid var(--ink); outline-offset: 7px; }
 .wordmark { font-size: 25px; font-weight: 700; letter-spacing: -1.3px; }
 .wordmark > span:first-child { font-weight: 400; }
 .brand-dot { color: #a79b38; }
-.footer a:hover { color: #7b7124; }
 main { flex: 1; display: flex; flex-direction: column; justify-content: center; }
 .hero { display: grid; grid-template-columns: 1.15fr 1fr; align-items: center; gap: 6%; padding: 73px 0 87px; }
 .eyebrow { display: flex; align-items: center; gap: 12px; margin: 0 0 28px; font-size: 10px; font-weight: 500; letter-spacing: 1.8px; line-height: 1.6; }
@@ -60,13 +58,7 @@ h1 { margin: 0; font-family: Georgia, 'Times New Roman', serif; font-size: clamp
 .bottom-right { bottom: 0; right: 0; border-width: 0 1px 1px 0; }
 figcaption { display: flex; align-items: center; justify-content: center; gap: 12px; margin-top: 25px; color: var(--muted); font-size: 11px; letter-spacing: .2px; }
 figcaption > span { font-family: Georgia, serif; font-size: 19px; color: #9a9257; }
-.note { display: flex; align-items: center; gap: 20px; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 25px 0; }
-.note-symbol { font-family: Georgia, serif; font-size: 25px; color: #8b8557; }
-.note p { margin: 0; font-size: 14px; color: #656c5f; line-height: 1.6; }
-.note-detail { margin-left: auto; font-family: 'Courier New', monospace; font-size: 10px; letter-spacing: 1.25px; color: var(--muted); }
-.mobile-break { display: none; }
-.footer { display: flex; justify-content: space-between; gap: 20px; padding: 29px 0; color: var(--muted); font-size: 11px; line-height: 1.5; }
-.footer a span { margin-left: 7px; }
+.footer { padding: 29px 0; text-align: center; color: var(--muted); font-size: 11px; line-height: 1.5; }
 .skip-link { position: fixed; top: -100px; left: 20px; z-index: 5; background: var(--paper); padding: 15px; }
 .skip-link:focus { top: 15px; }
 
@@ -82,7 +74,6 @@ figcaption > span { font-family: Georgia, serif; font-size: 19px; color: #9a9257
   .description { font-size: 14px; }
   .desktop-break { display: none; }
   .illustration { width: 320px; max-width: 100%; }
-  .note-detail { font-size: 9px; letter-spacing: .6px; }
 }
 
 @media (max-width: 600px) {
@@ -96,11 +87,7 @@ figcaption > span { font-family: Georgia, serif; font-size: 19px; color: #9a9257
   .contact-link { font-size: 13px; gap: 45px; }
   .illustration { width: 265px; margin: 0; }
   figcaption { margin-top: 16px; font-size: 10px; }
-  .note { padding: 21px 0; gap: 15px; }
-  .note p { font-size: 12px; }
-  .note-detail { display: none; }
-  .footer { font-size: 10px; padding: 24px 0; flex-wrap: wrap; gap: 12px; }
-  .footer-location { display: none; }
+  .footer { font-size: 10px; padding: 24px 0; }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -135,16 +122,10 @@ figcaption > span { font-family: Georgia, serif; font-size: 19px; color: #9a9257
           </figure>
         </section>
 
-        <aside class="note" aria-label="Our approach">
-          <span class="note-symbol" aria-hidden="true">⊢</span>
-          <p>From what software should do<br class="mobile-break" /> to why it does.</p>
-          <span class="note-detail">SPECIFY. REASON. VERIFY.</span>
-        </aside>
       </main>
 
       <footer class="footer">
         <span>© <span id="year">2026</span> ME2LON</span>
-        <span class="footer-location">software security for ai generated code</span>
       </footer>
     </div>
     <script>
